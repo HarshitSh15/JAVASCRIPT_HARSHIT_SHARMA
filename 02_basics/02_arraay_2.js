@@ -26,3 +26,5 @@ let s3=3;
 console.log(Array.of(s1,s2,s3)); // all elements in one array 
 console.log(Array.from("jjjjjjjjjj"));// convert string"s charachters in array 
 
+// ************************************************************
+
