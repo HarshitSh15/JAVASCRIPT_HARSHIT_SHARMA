@@ -1,5 +1,5 @@
 // if we have multiple values tham we use spread methods 
-
+/*
 function same(...num){
     return num;
 }
@@ -18,3 +18,14 @@ function fn1(obj){
 }
 
 fn1(user);
+*/
+
+// *************************************************************************
+one1()
+function one1(){
+    console.log("hee");
+}
+//two() // in thos thi will create error because fn is stored in the variable
+varx=function two(){
+    console.log("hee");
+}
