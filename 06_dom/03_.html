@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document object model</title>
 </head>
-<body>
+<body  style="background-color: black; color: white;">
+
     
 </body>
+<script>
+    const x = document.createElement("div");
+    console.log(x);
+    x.className="main";
+    x.id="myId";
+    x.setAttribute("title","set Title");
+  //  console.log(x);
+
+    x.style.backgroundColor="red"; 
+    x.innerHTML="hello";
+// creating a new element 
+    document.body.appendChild(x); // this will attach this div to the body of the html file 
+    
+
+
+</script>
 </html>
