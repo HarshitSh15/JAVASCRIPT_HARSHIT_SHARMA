@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model </title>
+</head>
+<body style="background-color: black; color: white;">
+    <div class="parent">
+        <div class="day">mon</div>
+        <div class="day">tue</div>
+        <div class="day">wed</div>
+        <div class="day">t</div>
+    </div>  
+</body>
+
+<script>
+  const x = document.querySelector(".parent")
+  console.log(x);
+  console.log(x.children);// this give us html collection and it act as a array 
+  console.log(x.children[0].innerHTML);
+    console.log("");
+    /*
+  for(let i=0; i< x.children.length; i++ ){
+    console.log(x.children[i].innerHTML);// by this we can print the values in the html collection 
+    
+  }
+    */
+  x.children[1].style.color="red";
+  console.log(x.children[1].innerHTML);  // by this we can print the values 
+  console.log("");
+  /*
+  console.log(x.firstElementChild.innerHTML); // used to acces the first element in the parent 
+  console.log(x.lastElementChild);
+  */
+  
+  
+
+  const dayone= document.querySelector(".day")
+  console.log(dayone);
+  
+  console.log(dayone.parentElement);
+  console.log(dayone.nextElementSibling);
+  
+  
+  
+
+  
+  
+    
+</script>
+</html>
