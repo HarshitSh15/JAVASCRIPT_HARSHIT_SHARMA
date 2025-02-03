@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+</body>
+<script>
+   const setting = function(){
+    console.log("hello");
+    
+   }
+   let inter;
+   document.querySelector("#start").addEventListener("click", function(){
+    inter=setInterval(setting,2000);
+   
+   })
+   
+   document.querySelector("#stop").addEventListener("click", function(){
+    clearInterval(inter);
+   })
+
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    /*
+    setTimeout(function(){ // does work one time 
+        console.log("hello");
+        
+    },2000)
+    */
+
+    function change(){
+        document.querySelector('h1').innerHTML="harshit";
+    }
+   const chanheMe= setTimeout(change,5000);
+
+    document.querySelector("#stop").addEventListener("click", function(){
+        clearTimeout(chanheMe);
+        console.log("stopped");
+        
+    })
+
+</script>
+</html>
